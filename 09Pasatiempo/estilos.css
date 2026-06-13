@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #cc0000;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Alertas de Validación */
+.alert {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.alert-error {
+    display: block;
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border: 1px solid #ffa3a3;
+}
+
+.alert-success {
+    display: block;
+    background-color: #e6ffe6;
+    color: #008000;
+    border: 1px solid #a3bfa3;
+}
+
+/* Tabla */
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #fcfcfc;
+}
+
+.resena-texto {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+.btn-delete {
+    color: #cc0000;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    color: #990000;
+}
+
+.btn-edit {
+    color: #0057cc;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+.btn-edit:hover {
+    color: #003d99;
+}
+
+.no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}

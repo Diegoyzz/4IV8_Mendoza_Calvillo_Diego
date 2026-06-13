@@ -1,0 +1,10 @@
+CREATE TABLE videos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  titulo TEXT NOT NULL,
+  canal TEXT NOT NULL,
+  categoria TEXT NOT NULL,
+  puntuacion INTEGER NOT NULL,
+  resena TEXT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+

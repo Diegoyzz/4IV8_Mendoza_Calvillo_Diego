@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de 3 Componentes</title>
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h2>Formulario de Registro</h2>
+        
+        <!-- FORMULARIO CON TODOS LOS COMPONENTES -->
+        <form id="miFormulario">
+            <!-- INPUTS (campos de texto, correo y teléfono) -->
+            <div class="grupo-input">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                <span class="error" id="errorNombre"></span>
+            </div>
+
+            <div class="grupo-input">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                <span class="error" id="errorCorreo"></span>
+            </div>
+
+            <div class="grupo-input">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" maxlength="10">
+                <span class="error" id="errorTelefono"></span>
+            </div>
+
+            <!-- TEXTAREA (campo de texto amplio) -->
+            <div class="grupo-input">
+                <label for="mensaje">Mensaje o comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="error" id="errorMensaje"></span>
+            </div>
+
+            <!-- BOTONES (enviar y limpiar) -->
+            <div class="grupo-botones">
+                <button type="submit" id="btnEnviar">Enviar</button>
+                <button type="reset" id="btnLimpiar">Limpiar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Enlace a JavaScript -->
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

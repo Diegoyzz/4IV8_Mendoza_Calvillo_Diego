@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ejercicios de JavaScript - Primera Parte</h1>
+
+        <!-- Ejercicio 1: Ganancia de inversión bancaria -->
+        <div class="ejercicio">
+            <h2>Ejercicio 1: Ganancia de inversión</h2>
+            <label>Capital a invertir: $</label>
+            <input type="text" id="capital" placeholder="Ingresa el capital">
+            <span class="error" id="errorCapital"></span>
+            <button onclick="calcularGanancia()">Calcular</button>
+            <p class="resultado" id="resultado1"></p>
+        </div>
+
+        <!-- Ejercicio 2: Sueldo de vendedor -->
+        <div class="ejercicio">
+            <h2>Ejercicio 2: Sueldo de vendedor</h2>
+            <label>Sueldo base: $</label>
+            <input type="text" id="sueldoBase" placeholder="Ingresa sueldo base">
+            <span class="error" id="errorSueldo"></span>
+
+            <label>Venta 1: $</label>
+            <input type="text" id="venta1" placeholder="Monto de venta 1">
+            <span class="error" id="errorVenta1"></span>
+
+            <label>Venta 2: $</label>
+            <input type="text" id="venta2" placeholder="Monto de venta 2">
+            <span class="error" id="errorVenta2"></span>
+
+            <label>Venta 3: $</label>
+            <input type="text" id="venta3" placeholder="Monto de venta 3">
+            <span class="error" id="errorVenta3"></span>
+
+            <button onclick="calcularSueldo()">Calcular</button>
+            <p class="resultado" id="resultado2"></p>
+        </div>
+
+        <!-- Ejercicio 3: Descuento en tienda -->
+        <div class="ejercicio">
+            <h2>Ejercicio 3: Descuento en compra</h2>
+            <label>Total de la compra: $</label>
+            <input type="text" id="totalCompra" placeholder="Ingresa el monto total">
+            <span class="error" id="errorCompra"></span>
+            <button onclick="calcularDescuento()">Calcular</button>
+            <p class="resultado" id="resultado3"></p>
+        </div>
+
+        <!-- Ejercicio 4: Calificación final -->
+        <div class="ejercicio">
+            <h2>Ejercicio 4: Calificación final</h2>
+            <label>Calificación parcial 1:</label>
+            <input type="text" id="parcial1" placeholder="Nota 0-10">
+            <span class="error" id="errorParcial1"></span>
+
+            <label>Calificación parcial 2:</label>
+            <input type="text" id="parcial2" placeholder="Nota 0-10">
+            <span class="error" id="errorParcial2"></span>
+
+            <label>Calificación parcial 3:</label>
+            <input type="text" id="parcial3" placeholder="Nota 0-10">
+            <span class="error" id="errorParcial3"></span>
+
+            <label>Calificación examen final:</label>
+            <input type="text" id="examenFinal" placeholder="Nota 0-10">
+            <span class="error" id="errorExamen"></span>
+
+            <label>Calificación trabajo final:</label>
+            <input type="text" id="trabajoFinal" placeholder="Nota 0-10">
+            <span class="error" id="errorTrabajo"></span>
+
+            <button onclick="calcularCalificacion()">Calcular</button>
+            <p class="resultado" id="resultado4"></p>
+        </div>
+
+        <!-- Ejercicio 5: Porcentaje de hombres y mujeres -->
+        <div class="ejercicio">
+            <h2>Ejercicio 5: Porcentaje por género</h2>
+            <label>Cantidad de hombres:</label>
+            <input type="text" id="cantHombres" placeholder="Número de hombres">
+            <span class="error" id="errorHombres"></span>
+
+            <label>Cantidad de mujeres:</label>
+            <input type="text" id="cantMujeres" placeholder="Número de mujeres">
+            <span class="error" id="errorMujeres"></span>
+
+            <button onclick="calcularPorcentajeGenero()">Calcular</button>
+            <p class="resultado" id="resultado5"></p>
+        </div>
+
+        <!-- Ejercicio 6: Calcular edad -->
+        <div class="ejercicio">
+            <h2>Ejercicio 6: Calcular edad</h2>
+            <label>Año de nacimiento:</label>
+            <input type="text" id="anioNacimiento" placeholder="Ej: 2000">
+            <span class="error" id="errorAnio"></span>
+
+            <label>Año actual:</label>
+            <input type="text" id="anioActual" placeholder="Ej: 2025">
+            <span class="error" id="errorAnioActual"></span>
+
+            <button onclick="calcularEdad()">Calcular</button>
+            <p class="resultado" id="resultado6"></p>
+        </div>
+    </div>
+
+    <script src="js/ejercicios.js"></script>
+</body>
+</html>

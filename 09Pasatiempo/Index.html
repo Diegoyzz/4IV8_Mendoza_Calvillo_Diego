@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Videos Favoritos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <p style="text-align:center; font-weight:bold; margin:0.75rem 0;">Diego Mendoza Calvillo — 4IV8</p>
+    <h1>Videos que me gustan</h1>
+    
+    <div id="alertBox" class="alert"></div>
+
+    <form id="videoForm">
+        <div class="form-group">
+            <label for="txtTitulo">1. Título del Video:</label>
+            <input type="text" id="txtTitulo" maxlength="100" placeholder="Ej. El mejor video de la historia">
+        </div>
+        
+        <div class="form-group">
+            <label for="txtCanal">2. Canal del Video:</label>
+            <input type="text" id="txtCanal" maxlength="80" placeholder="Ej. Nombre del Youtuber o Canal">
+        </div>
+        
+        <div class="form-group">
+            <label for="txtCategoria">3. Categoría:</label>
+            <select id="txtCategoria">
+                <option value="Educación">Educación</option>
+                <option value="Entretenimiento">Entretenimiento</option>
+                <option value="Música">Música</option>
+                <option value="Tecnología">Tecnología</option>
+                <option value="Videojuegos">Videojuegos</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="txtPuntuacion">4. Puntuación (Calificación):</label>
+            <select id="txtPuntuacion">
+                <option value="5">⭐⭐⭐⭐⭐ (Excelente)</option>
+                <option value="4">⭐⭐⭐⭐ (Muy Bueno)</option>
+                <option value="3">⭐⭐⭐ (Bueno)</option>
+                <option value="2">⭐⭐ (Regular)</option>
+                <option value="1">⭐ (Malo)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="txtResena">Reseña u Opinión Personal:</label>
+            <textarea id="txtResena" maxlength="300" placeholder="Escribe aquí qué te pareció el video o por qué te gusta..."></textarea>
+        </div>
+        
+        <button type="submit" id="btnGuardar">Guardar Video</button>
+    </form>
+
+    <h2>Mi Registro de Favoritos</h2>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Canal</th>
+                    <th>Categoría</th>
+                    <th>Puntuación</th>
+                    <th>Reseña</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaVideos">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
