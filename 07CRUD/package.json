@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "07crud",
   "version": "1.0.0",
@@ -17,3 +18,24 @@
     "mysql2": "^3.22.3"
   }
 }
+=======
+{
+  "name": "07crud",
+  "version": "1.0.0",
+  "description": "Ejemplo de crud con vainillaJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "mysql",
+    "nodejs"
+  ],
+  "author": "Demonassit",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.22.3"
+  }
+}
+>>>>>>> ee6271e5ae07c3be3d4e289abaaa55067a755330
